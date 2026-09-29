@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#09080d">
+<title>قصة حبي معاكي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09080d;--card:rgba(255,255,255,.055);--line:rgba(255,255,255,.12);--text:#f8f5f7;--muted:#c9c3c9;--pink:#e86b9d;--pink2:#ff9cc2;--shadow:0 28px 90px rgba(0,0,0,.52)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Cairo,system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:-20%;z-index:-3;background:radial-gradient(circle at 50% 15%,rgba(219,70,132,.18),transparent 28%),radial-gradient(circle at 15% 75%,rgba(127,48,106,.12),transparent 28%),radial-gradient(circle at 90% 85%,rgba(238,105,157,.08),transparent 25%),#09080d;animation:ambient 12s ease-in-out infinite alternate}
+body:after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(115deg,transparent 0 45%,rgba(255,255,255,.025) 50%,transparent 55%);mix-blend-mode:screen}
+@keyframes ambient{to{transform:scale(1.06) translate3d(1%, -1%,0)}}
+.screen{min-height:100svh;display:none;align-items:center;justify-content:center;padding:28px 18px;position:relative}.screen.active{display:flex}
+.glass{background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));border:1px solid var(--line);box-shadow:var(--shadow),inset 0 1px rgba(255,255,255,.07);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.password-card{width:min(510px,100%);padding:42px 30px;text-align:center;border-radius:32px;position:relative;overflow:hidden}.password-card:before{content:"";position:absolute;width:240px;height:240px;right:-100px;top:-130px;border-radius:50%;background:rgba(232,107,157,.16);filter:blur(5px)}
+.heart{font-size:46px;display:block;margin-bottom:14px;filter:drop-shadow(0 0 22px rgba(232,107,157,.5));animation:pulse 2.4s ease-in-out infinite}@keyframes pulse{50%{transform:scale(1.08)}}
+.kicker{font-size:13px;letter-spacing:2px;color:var(--pink2);margin-bottom:8px}.password-title{font-family:"Playfair Display",serif;font-size:34px;margin:0 0 10px}.sub{color:var(--muted);font-size:14px;margin:0 0 26px}
+.pass-wrap{display:flex;gap:10px;direction:ltr}.pass{flex:1;min-width:0;border:1px solid rgba(255,255,255,.15);background:rgba(0,0,0,.22);color:#fff;border-radius:16px;padding:15px 16px;font:600 16px Cairo;outline:none;text-align:center;direction:auto}.pass:focus{border-color:rgba(255,156,194,.7);box-shadow:0 0 0 4px rgba(232,107,157,.09)}
+.btn{border:0;color:#fff;background:linear-gradient(135deg,#d6538a,#ee83ad);border-radius:16px;padding:0 21px;font:700 15px Cairo;cursor:pointer;box-shadow:0 12px 28px rgba(214,83,138,.23);transition:.25s}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.error{height:22px;color:#ff9fbf;font-size:12px;margin-top:10px;opacity:0;transition:.2s}.error.show{opacity:1}
+.hero{min-height:100svh;text-align:center;padding:30px 20px}.hero-inner{max-width:900px}.eyebrow{color:var(--pink2);letter-spacing:3px;font-size:12px;margin-bottom:18px}.hero h1{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(38px,8vw,78px);line-height:1.2;margin:0 auto 24px;text-shadow:0 0 38px rgba(232,107,157,.18)}.hero p{font-size:clamp(16px,2.7vw,21px);color:#e8e1e6;line-height:2;margin:0 auto;max-width:800px}.continue{margin-top:38px}.arrow{display:inline-block;margin-right:8px;transition:.2s}.continue:hover .arrow{transform:translateX(-4px)}
+.content{width:min(950px,100%);padding:35px 18px 70px}.message-card{border-radius:30px;padding:clamp(25px,5vw,50px);margin-bottom:24px}.message-title{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(26px,5vw,42px);margin:0 0 34px}.line{opacity:0;transform:translateY(13px);transition:opacity .7s ease,transform .7s ease;margin:0 0 18px;color:#eee8ed;font-size:clamp(16px,2.7vw,20px);line-height:2.05}.line.visible{opacity:1;transform:none}.line:last-child{margin-bottom:0}.section-actions{text-align:center;margin-top:30px}
+.media-card{border-radius:30px;padding:18px;margin:25px 0 28px}.video-shell{position:relative;border-radius:22px;overflow:hidden;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.35)}video{display:block;width:100%;max-height:70vh;background:#000}.caption{padding:20px 12px 8px;text-align:center;color:#eee8ed;font-size:clamp(15px,2.5vw,19px);line-height:2}
+.end{text-align:center;min-height:100svh}.end .message-card{max-width:900px}.signature{font-family:"Playfair Display",serif;color:var(--pink2);font-size:22px;margin-top:32px}.tiny{color:#9d969e;font-size:11px;margin-top:14px}
+.fade-in{animation:fadeIn .9s ease both}@keyframes fadeIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.nav{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:20;display:none;gap:8px;padding:7px;border-radius:999px;background:rgba(12,10,15,.65);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(15px)}.nav.show{display:flex}.nav button{border:0;background:transparent;color:#bfb8c0;font:600 12px Cairo;padding:7px 10px;border-radius:999px;cursor:pointer}.nav button.active{background:rgba(232,107,157,.18);color:#fff}
+@media(max-width:520px){.password-card{padding:34px 20px}.pass-wrap{flex-direction:column}.btn{height:52px}.pass{height:52px}.message-card{padding:24px 19px}.line{font-size:15px}.media-card{padding:11px;border-radius:23px}.caption{padding:16px 5px 6px}}
+</style>
+</head>
+<body>
+<main id="app">
+<section id="lock" class="screen active">
+  <div class="password-card glass fade-in">
+    <span class="heart">❤</span><div class="kicker">FOR YOU</div>
+    <h1 class="password-title">في حاجة صغيرة مستنياكي</h1>
+    <p class="sub">اكتبي كلمة السر عشان نفتـح الحكاية سوا</p>
+    <div class="pass-wrap"><input id="password" class="pass" type="password" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false" lang="ar" dir="auto" aria-label="كلمة السر"><button id="unlock" class="btn">افتحيها ❤</button></div>
+    <div id="error" class="error">كلمة السر مش هي دي ❤️</div>
+  </div>
+</section>
+<section id="home" class="screen hero"><div class="hero-inner fade-in"><div class="eyebrow">OUR LITTLE STORY</div><h1>قصه حبي معاكي ملهاش نهاية والنهاية مش هتتكتب الا وانتي في بيتي❤🙈</h1><p>كل لحظة بينا ليها مكان، وكل ذكرى ليها حكاية.</p><div class="continue"><button class="btn" data-next="startMsg">شوف حكايتنا <span class="arrow">↓</span></button></div></div></section>
+<section id="startMsg" class="screen"><div class="content"><div class="message-card glass"><h2 class="message-title">رسالة ليكي ❤</h2><div id="startLines"></div></div><div class="section-actions"><button class="btn" data-next="secondMsg">كملي الحكاية ↓</button></div></div></section>
+<section id="secondMsg" class="screen"><div class="content"><div class="message-card glass"><h2 class="message-title">وعدي ليكي ❤</h2><div id="secondLines"></div></div><div class="section-actions"><button class="btn" data-next="video1">شوفي الذكرى ↓</button></div></div></section>
+<section id="video1" class="screen"><div class="content"><div class="media-card glass"><div class="video-shell"><video id="v1" controls playsinline preload="metadata" src="assets/video1.mp4"></video></div><div class="caption">شايفه الفديو دا فديو حزن 🤣🤣 بس يعني كانت وقت ما سبنا بعض فترة الوسخ سعود شغال احزان 🤣🤣</div></div><div class="section-actions"><button class="btn" data-next="video2">والذكرى التانية ↓</button></div></div></section>
+<section id="video2" class="screen"><div class="content"><div class="media-card glass"><div class="video-shell"><video id="v2" controls playsinline preload="metadata" src="assets/video2.mp4"></video></div><div class="caption">انما دا بقى ذكرى انتي عاملاها وقت مود البحار لسه عندي   🙈❤❤❤</div></div><div class="section-actions"><button class="btn" data-next="end">لآخر حاجة ❤</button></div></div></section>
+<section id="end" class="screen end"><div class="content"><div class="message-card glass"><h2 class="message-title">وأخيرًا... ❤</h2><div id="endLines"></div><div class="signature">بعشقك ❤</div></div></div></section>
+</main>
+<div id="nav" class="nav"><button data-nav="home">البداية</button><button data-nav="startMsg">الرسالة</button><button data-nav="video1">الذكريات</button><button data-nav="end">النهاية</button></div>
+<audio id="music" src="assets/music.mp4" preload="auto" loop></audio>
+<script>
+const PASSWORD='إدماني';
+const texts={
+start:[
+'كل عام وانتي اجمل واحن اميرة في حياتي ❤❤',
+'كل عام وحبي ليكي يزيد يوم عن يوم ولحظه عن لحظه❤❤',
+'كل عام وانتي الاولى والوحيده والأخيرة في قلبي ❤❤',
+'كل عام وانتي احب شخص لقلبي❤',
+'كل عام وانتي حبيبتي  🙈وتكوني مراتي قدام بردك 🙈❤❤',
+'يمكن متفكريش دي مناسبه بس انتي كل يوم معاية فيه مناسبة وعيد انتي عيدي ❤❤',
+'عدينا حجات كتير اوي مع بعض من ساعت ما عرفتك انا بدات اعيش ❤',
+'فاكرة وقت ما اعترفتيلك بحبي! وعدتك وعدين :',
+'اولا انتي اول حب وعشق وادمان في حياتي بحبك  وهفضل احبك انتي بس  مهمها مر الوقت حبي ليكي بيزيد انتي الاولى والاخيرة ال هتخش قلبي دا بحب كل حاجه فيكي ❤',
+'الثاني انا عمري ما هسيبك في اي وضع في اي ظرف زعل؟؟ يستي دا انتي محنونه مبلكاني يجي اربع مرات لدلوقت🤣🤣 سبتك؟ لا حتى لو زعلتي مني هفضل وراكي لحد ما اراضيكي لان دلوعتي وحبيبتي ومراتي مينفعش تزعل واسيبها 🙈❤ فانا معاكي دايما خليكي فاكرة دا❤',
+'عاوز اجيلك النهارده قبل بكرة اوي تكوني ليا بس يلا هانت اخلص الجيش  بتاعي صح هنفترق ممكن  فترة كبيرة حفتقدك اوي بس طبعا انتي اقربهم لقلبي وجودك في قلبي بس بيديني دافع اني اكمل  اخلص  واشتغل فترة وووو اتجوزك وتبقى في بيتي ان شاء الله 🙈❤اوقات عارف انك بتفقدي الامل وبتقولي في نفسك مش هينفع لكن برجع وهديكي على دماغك انا لو في مستحيل هعمله بردك عشانك لحد ما تبقى في بيتي فاهمه😠🔪  🙈❤'
+],
+second:['فاكرة مود البحار دا اجمل مود بالنسبالي ليه؟ عشان حبينا بعض فيه عشقنا بعض❤🙈 دا مش معناه ان دلوقت قل!! دلوقت بعشققك اكتر من الاول واكتر من اي وقت وانتي عارفة 🙈 🔪','بعترفلك الاعتراف للمرة المليون بحببببببببك اويييييييييييييييييييييييييييييييييييي يا.. (مراتي) 🙈❤'],
+end:['وفي النهاية عايز اقولك اني بعششقكككك كتيررررر اوييي','ملحوظة صغننه: امبارح كانت من اجمل اجمل اجمل لحظات كانت بينا كنتي عشيقتي وحبيبتي وروحي ومراتي وقتها مش شايف غيرك انا ولا عايز غيرك انتي ونقطه على السطر 🙈🙈','بعشششقكككككك❤❤❤❤❤❤❤❤❤❤❤']};
+function lines(id,arr){const box=document.getElementById(id);box.innerHTML='';arr.forEach((t,i)=>{const p=document.createElement('p');p.className='line';p.textContent=t;box.appendChild(p);setTimeout(()=>p.classList.add('visible'),650+i*1100)})}
+function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'instant'});document.getElementById('nav').classList.toggle('show',id!=='lock');document.querySelectorAll('[data-nav]').forEach(b=>b.classList.toggle('active',b.dataset.nav===id));if(id==='startMsg')lines('startLines',texts.start);if(id==='secondMsg')lines('secondLines',texts.second);if(id==='end')lines('endLines',texts.end);if(id==='video1')document.getElementById('v2').pause();if(id==='video2')document.getElementById('v1').pause()}
+function unlock(){const value=document.getElementById('password').value;if(value===PASSWORD){unlocked=true;document.getElementById('error').classList.remove('show');show('home');const m=document.getElementById('music');m.volume=.55;m.play().catch(()=>{});}else{document.getElementById('error').classList.add('show');document.getElementById('password').focus()}}
+document.getElementById('unlock').addEventListener('click',unlock);document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.next)));document.querySelectorAll('[data-nav]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.nav)));
+const music=document.getElementById('music');
+const videos=[document.getElementById('v1'),document.getElementById('v2')];
+let unlocked=false;
+
+// Music control: the first song pauses while either video plays, then resumes from
+// exactly where it stopped as soon as that video is paused or finishes.
+function resumeMusic(){
+  if(unlocked){
+    const activeVideo=videos.find(v=>!v.paused && !v.ended);
+    if(!activeVideo) music.play().catch(()=>{});
+  }
+}
+
+videos.forEach(v=>{
+  v.addEventListener('play',()=>{
+    music.pause();
+  });
+  v.addEventListener('pause',resumeMusic);
+  v.addEventListener('ended',resumeMusic);
+});
+
+// Keep the same music playing through navigation and restart/loop naturally.
+music.addEventListener('ended',()=>{
+  music.currentTime=0;
+  if(unlocked) music.play().catch(()=>{});
+});
+
+</script>
+</body></html>
